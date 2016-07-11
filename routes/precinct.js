@@ -28,7 +28,7 @@ router.get('/', function (req, res) {
             
             //retrieve voters by doing a query
             request({
-                url: 'https://na30.salesforce.com/services/data/v35.0/query/?q=select+id,+name,+Political_Party__c,+Precinct__r.Name,+Mailing_Address__c+from+Voter__c+where+ Precinct__r.Name+=+%273rd District%27',
+                url: 'https://ap2.salesforce.com/services/data/v35.0/query/?q=select+id,+name,+Political_Party__c,+Precinct__r.Name,+Mailing_Address__c+from+Voter__c+where+ Precinct__r.Name+=+%273rd District%27',
                 method: 'GET',
                 headers: {
                     'Authorization': 'Bearer ' + token
