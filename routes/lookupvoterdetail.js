@@ -35,7 +35,7 @@ router.post('/', function (req, res) {
             
             //retrieve voter along with donations from custom service
             request({
-                url: 'https://na30.salesforce.com/services/apexrest/VotersWithDonation/' + id,
+                url: 'https://ap2.salesforce.com/services/apexrest/VotersWithDonation/' + id,
                 method: 'GET',
                 headers: {
                     'Authorization': 'Bearer ' + token
